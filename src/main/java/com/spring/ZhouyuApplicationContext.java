@@ -132,7 +132,7 @@ public class ZhouyuApplicationContext {
                     String absolutePath = f.getAbsolutePath();
 
                     absolutePath = absolutePath.substring(absolutePath.indexOf("com"), absolutePath.indexOf(".class"));
-                    absolutePath = absolutePath.replace("\\", ".");
+                    absolutePath = absolutePath.replace("/", ".");
 
                     try {
                         Class<?> clazz = classLoader.loadClass(absolutePath);
