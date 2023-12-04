@@ -134,7 +134,6 @@ public class ZhouyuApplicationContext {
                     absolutePath = absolutePath.substring(absolutePath.indexOf("com"), absolutePath.indexOf(".class"));
                     absolutePath = absolutePath.replace("\\", ".");
 
-
                     try {
                         Class<?> clazz = classLoader.loadClass(absolutePath);
 
@@ -173,13 +172,8 @@ public class ZhouyuApplicationContext {
                     } catch (IllegalAccessException e) {
                         e.printStackTrace();
                     }
-
-
                 }
             }
-
-
-
         }
     }
 }
